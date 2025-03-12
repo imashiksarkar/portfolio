@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@layer components {
+  .con {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  .cta-button {
+    @apply bg-orange-400
+    px-[1.13rem]
+    py-2.5
+    rounded-lg
+    block
+    relative
+    outline-2
+    -outline-offset-1
+    outline-transparent
+    transition-[outline]
+    duration-150
+    after:content-['']
+    after:absolute
+    after:w-full
+    after:h-full
+    after:top-1
+    after:left-1
+    after:bg-slate-950
+    after:-z-10
+    after:rounded-lg
+    after:transition-[top,left] after:duration-150
+    after:pointer-events-none
+    hover:[&:after]:top-0
+    hover:[&:after]:left-0
+    hover:outline-orange-400;
+  }
+}
+
+body {
+  font-family: var(--font-roboto), sans-serif;
+}
