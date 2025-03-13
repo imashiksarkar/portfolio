@@ -32,6 +32,10 @@
     hover:[&:after]:left-0
     hover:outline-orange-400;
   }
+
+  .hero-clip {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  }
 }
 
 body {

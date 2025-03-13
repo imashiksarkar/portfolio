@@ -1,0 +1,65 @@
+import CtaButton from '@/components/CtaButton'
+import Image from 'next/image'
+
+const Hero = () => {
+  return (
+    <section
+      className="
+          hero
+          bg-[url('/hero-bg.png')]
+          bg-cover
+          bg-center
+        text-white
+          hero-clip
+          pt-10
+        "
+    >
+      <div
+        className='
+            con
+            grid
+            grid-cols-2 
+            h-full
+          '
+      >
+        <div className='details'>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <h1 className='text-4xl font-bold'>Hi, I&apos;m Ashik</h1>
+          <p className='text-xl font-semibold'>I&apos;m a Web Developer</p>
+          <br />
+          <p className='text-lg'>
+            I am a web developer with a passion for creating beautiful and
+            functional websites. I have experience working with a wide range of
+            technologies, including React, Nodejs, Nextjs, Expressjs, Mongodb
+            and more.
+          </p>
+          <br />
+          <CtaButton href='/' className='w-max text-2xl'>
+            Download CV
+          </CtaButton>
+        </div>
+        <div className='banner h-full overflow-hidden'>
+          <figure className='h-full'>
+            <Image
+              src='/dev-pic.png'
+              alt='Hero'
+              width={557}
+              height={583}
+              objectFit='cover'
+              className='ms-auto h-full object-cover'
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Hero
