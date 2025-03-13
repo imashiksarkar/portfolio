@@ -2,6 +2,7 @@ import AboutMe from '@/components/AboutMe'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Projects from '@/components/Projects'
+import Skills from '@/components/Skills'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <main className='row-[1/3] col-[1/2]'>
         <Hero />
         <AboutMe />
+        <Skills />
         <Projects />
       </main>
       <footer className='w-full bg-slate-800 flex items-center justify-center py-2 text-base text-white'>
