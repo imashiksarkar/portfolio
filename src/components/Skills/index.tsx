@@ -55,6 +55,10 @@ const skills = [
     name: 'Express.js',
     image: '/skills-icons/expressjs.png',
   },
+  {
+    name: 'Docker',
+    image: '/skills-icons/docker.png',
+  },
 ]
 
 const Skills = () => {
@@ -64,12 +68,13 @@ const Skills = () => {
     <section className='skills'>
       <div className='con text-white  flex flex-col items-center justify-center gap-10'>
         <SectionHeader>Skills</SectionHeader>
-        <Marquee pauseOnHover autoFill className='cursor-wait'>
-          <ul className='flex gap-10 pb-30'>
+        <Marquee pauseOnHover autoFill className='cursor-wait'
+        speed={150}>
+          <ul className='flex gap-30 pb-30'>
             {skills.map((skill, index) => (
               <li
                 key={skill.name}
-                className={index === lastSkillIndex ? 'mr-10' : ''}
+                className={index === lastSkillIndex ? 'mr-30' : ''}
               >
                 <Image
                   src={skill.image}
