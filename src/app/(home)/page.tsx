@@ -6,7 +6,7 @@ import Skills from '@/components/Skills'
 
 export default function Home() {
   return (
-    <section className='home-page w-full min-h-dvh max-h-full grid grid-flow-row grid-rows-[auto_1fr_auto] grid-cols-1'>
+    <section className='home-page w-full min-h-dvh max-h-full grid grid-flow-row grid-rows-[auto_1fr_auto] grid-cols-1  overflow-x-hidden'>
       <header className='row-[1/2] col-[1/2] md:py-5 z-20'>
         <Navbar />
       </header>
