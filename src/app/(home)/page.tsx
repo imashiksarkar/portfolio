@@ -12,8 +12,8 @@ export default function Home() {
         <Hero />
         <AboutMe />
       </main>
-      <footer className='w-full bg-amber-200 flex items-center justify-center'>
-        <p>Footer</p>
+      <footer className='w-full bg-slate-800 flex items-center justify-center py-2 text-base text-white'>
+        <p>{new Date().getFullYear()} © Ashik Sarkar | All Rights Reserved</p>
       </footer>
     </section>
   )
