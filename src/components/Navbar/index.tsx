@@ -4,7 +4,7 @@ import CtaButton from '@/components/CtaButton'
 
 const Navbar = () => {
   return (
-    <nav className='con flex items-center justify-between py-2.5 bg-slate-950/30 backdrop-blur-lg rounded-md text-white font-medium text-2xl'>
+    <nav className='con flex items-center justify-between py-2.5 bg-slate-950/30 backdrop-blur-xs rounded-md text-white font-medium text-2xl'>
       <Link href='/'>
         <Image
           src='/logo-200x200-compressed.png'
@@ -29,9 +29,7 @@ const Navbar = () => {
           <Link href='/#education'>education</Link>
         </li>
         <li>
-          <CtaButton href='/#contact' className='after:bg-red-400'>
-            contact me
-          </CtaButton>
+          <CtaButton href='/#contact'>contact me</CtaButton>
         </li>
       </ul>
     </nav>
