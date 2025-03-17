@@ -39,7 +39,11 @@ const Hero = () => {
             and more.
           </p>
           <br />
-          <CtaButton href='/' className='w-max text-2xl'>
+          <CtaButton
+            href='https://drive.google.com/uc?export=download&id=1f6ERGbkXAdtVJRQAOo7m9QFrzB5c7adA'
+            className='w-max text-2xl'
+            doanload='Ashik_Sarkar_CV.pdf'
+          >
             Download CV
           </CtaButton>
           <br />
